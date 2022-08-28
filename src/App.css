@@ -1,0 +1,180 @@
+.App {
+  text-align: center;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+:root {
+  /* Text Colors */
+  --text-gray: #808291;
+  --text-white: #f8f9f6;
+  --text-light: #f6f6f6;
+  --text-dark: #1a3260;
+  --text-dark2: #1a3760d4;
+  --text-red: #ff4d6d;
+  --primary-color: #e1301e;
+
+  /*Gradient Colors */
+  --bg-gradient: linear-gradient(to right, #ff512f, #dd2476);
+  --bg-gradient-indigo: linear-gradient(to right, #8e2de2, #4a00e0);
+  --bg-gradient-peach: linear-gradient(to right, #fff7f3, #fff7f3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* display: flex; */
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  line-height: 1.6;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow-x: hidden;
+}
+
+/* #root {
+  display: flex;
+} */
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid {
+  display: grid;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style-type: none !important;
+}
+
+.btn-small {
+  padding: 5px 10px;
+  /*height: 30px;*/
+  font-size: 12px;
+}
+
+textarea,
+input {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.background {
+  padding: 80px 0;
+  position: relative;
+  background-color: #f7f9fc;
+}
+
+.grid5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 30px;
+}
+
+/* label {
+  color: #2d3954;
+  font-size: 14px;
+} */
+
+.mtop {
+  margin-top: 50px;
+}
+
+h4 {
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.shadow {
+  box-shadow: 0 0 20px 0 rgba(112 121 138 / 18%);
+}
+
+.padding {
+  padding: 80px 0;
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+}
+
+.btn2 {
+  border-radius: 50px;
+  font-size: 20px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
