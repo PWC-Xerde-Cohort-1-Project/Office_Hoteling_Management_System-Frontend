@@ -1,7 +1,0 @@
-.Wrapper{
-    display: flex;
-}
-.Wrapper_Maincontent{
-    height: 100vh;
-    overflow-y: auto;
-}
